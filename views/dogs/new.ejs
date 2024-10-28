@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a dog record</title>
+  </head>
+  <body>
+    <h1>Create a new dog record!</h1>
+    <form action="/dogs" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+        <br>
+        <br>
+        <label for="breed">Breed:</label>
+        <input type="text" name="breed" id="breed" />
+        <br>
+        <br>
+        <label for="sex">Sex:</label>
+        <input type="text" name="sex" id="sex" />
+        <br>
+        <br>
+        <label for="isDewormed">Dewormed?</label>
+        <input type="checkbox" name="isDewormed" id="isDewormed" />
+        <br>
+        <br>
+        <button type="submit">Add a record</button>
+      </form>
+      <a href="/dogs/">Back to view all registered dogs</a>
+  </body>
+</html>
